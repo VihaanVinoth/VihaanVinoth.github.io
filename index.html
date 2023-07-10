@@ -1,0 +1,23 @@
+<p style="font-size: 1.8em">Indian Web Developer and Astronomy enthusiast. Press the button 👇 to see my projects.</p>
+<br>
+<br>
+<button class="projects">Project Gallery</button>
+</center>
+        <div id="div" class="footer">
+            <p class="copyright" style="font-size: 1.5em">©2023 made with <abbr>♥️</abbr>  by Vihaan Vinoth. All rights reserved.</p>
+        </div>
+        <div class="cursor-outer"></div>
+        <div class="cursor-inner"></div>
+        <script>
+            const cursor = document.querySelector(".cursor-inner");
+            const cursor2 = document.querySelector(".cursor-outer");
+            document.addEventListener("mousemove", e=>{
+                cursor.style.top = e.pageY + "px";
+                cursor.style.left = e.pageX + "px";
+     
+                cursor2.style.top = e.pageY + "px";
+                cursor2.style.left = e.pageX + "px";
+            })
+        </script>
+</body> 
+</html>
