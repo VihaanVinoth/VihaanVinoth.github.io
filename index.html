@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vihaan Vinoth</title>
+    <link rel="stylesheet" href="style.css">
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8253398098387796"
+     crossorigin="anonymous"></script>
+</head>
+<body onlick="backgroundImage()">
+<div id="vanta-canvas">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+     <script type="text/javascript">
+        VANTA.FOG({
+  el: "#vanta-canvas",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00
+})
+</script>
+</div>
+<div class="main">
+    <nav>
+        <ul>
+            <li><a href="index.html">&nbsp;// Home</a></li>
+            <li><a href="about.html">&nbsp;// About</a></li>
+            <li><a href="#">&nbsp;// Projects</a></li>
+        </ul>
+    </nav>
+<center>
+<div class="container"> 
+    <div class="typed-out">
+    <h1 style="font-size: 4.5em">Hello, I'm Vihaan.</h1>
+    </div>
+</div>
+<p style="font-size: 1.8em">Indian Web Developer and Astronomy enthusiast. Press the button 👇 to see my projects.</p>
+<br>
+<br>
+<button class="projects">Project Gallery</button>
+</center>
+        <div id="div" class="footer">
+            <p class="copyright" style="font-size: 1.5em">©2023 made with <abbr>♥️</abbr>  by Vihaan Vinoth. All rights reserved.</p>
+        </div>
+        <div class="cursor-outer"></div>
+        <div class="cursor-inner"></div>
+        <script>
+            const cursor = document.querySelector(".cursor-inner");
+            const cursor2 = document.querySelector(".cursor-outer");
+            document.addEventListener("mousemove", e=>{
+                cursor.style.top = e.pageY + "px";
+                cursor.style.left = e.pageX + "px";
+     
+                cursor2.style.top = e.pageY + "px";
+                cursor2.style.left = e.pageX + "px";
+            })
+        </script>
+</body> 
+</html>
