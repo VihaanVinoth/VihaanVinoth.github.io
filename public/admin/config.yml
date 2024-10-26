@@ -4,8 +4,8 @@ backend:
 media_folder: "public/assets/blog"
 public_folder: "/assets/blog"
 collections:
-  - name: "blog"
-    label: "Blog"
+  - name: "post"
+    label: "Post"
     folder: "src/posts"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
