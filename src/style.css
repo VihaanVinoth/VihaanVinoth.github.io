@@ -112,6 +112,7 @@ main h1 {
 .card {
   padding: 20px;
   width: auto;
+  height: 100%;
 }
 
 .cards a {
