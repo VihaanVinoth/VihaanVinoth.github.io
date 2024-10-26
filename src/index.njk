@@ -1,0 +1,38 @@
+---
+title: Vertri
+layout: 'base.njk'
+---
+<h1>Recent Posts.</h1>
+<div class="cards">
+    {%- for post in collections.post | reverse -%}
+        <a href="{{post.url}}">
+            <div class="card">
+                <div class="card-img">
+                    <img src="{{ post.data.image }}" alt="{{ post.data.imageAlt }}">
+                </div>
+                <div class="card-body">
+                    <h2>{{ post.data.title }}</h2>
+                    <p class="author-meta">by <span>{{ post.data.author }}</span> · <span>{{ post.date | postDate }}</span></p>
+                    <p>{{post.data.description}}</p>
+                </div>
+            </div>
+        </a>
+    {%- endfor %}
+</div>
+
+
+        {# 
+            <a href="./posts/first-post.njk">
+                <div class="card">
+                    <div class="card-img">
+                        <br>
+                        <br>
+                    </div>
+                    <div class="card-body">
+                        <h2>First Post</h2>
+                        <p>25/10/24 · 11:36pm</p>
+                        <p>Welcome to my blog!</p>
+                    </div>
+                </div>
+            </a>
+        #}
