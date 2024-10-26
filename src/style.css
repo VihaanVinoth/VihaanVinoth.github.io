@@ -62,6 +62,19 @@ body {
   padding: 0;
 }
 
+.social-icons i {
+  color: white;
+}
+
+.social-icons i:hover {
+  transition: all 100ms ease-in;
+  color: rgb(204, 204, 204);
+}
+
+.social-icons i:not(:hover) {
+  transition: all 100ms ease-out;
+}
+
 main {
   width: 60%;
   position: absolute;
