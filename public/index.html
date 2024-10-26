@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/e091b59623.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8253398098387796"
      crossorigin="anonymous"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -38,7 +39,7 @@
 <div class="cards"><a href="/posts/third-post/">
             <div class="card">
                 <div class="card-img">
-                    <img src="/assets/welcome.png" alt="Welcome Cover">
+                    <img src="/assets/blog/welcome.png" alt="Welcome Cover">
                 </div>
                 <div class="card-body">
                     <h2>Third Post</h2>
@@ -49,7 +50,7 @@
         </a><a href="/posts/second-post/">
             <div class="card">
                 <div class="card-img">
-                    <img src="/assets/welcome.png" alt="Welcome Cover">
+                    <img src="/assets/blog/welcome.png" alt="Welcome Cover">
                 </div>
                 <div class="card-body">
                     <h2>Second Post</h2>
@@ -60,7 +61,7 @@
         </a><a href="/posts/first-post/">
             <div class="card">
                 <div class="card-img">
-                    <img src="/assets/welcome.png" alt="Welcome Cover">
+                    <img src="/assets/blog/welcome.png" alt="Welcome Cover">
                 </div>
                 <div class="card-body">
                     <h2>First Post</h2>
@@ -74,5 +75,17 @@
 
         
     </main>
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>

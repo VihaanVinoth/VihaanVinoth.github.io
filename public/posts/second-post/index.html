@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/e091b59623.js" crossorigin="anonymous"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8253398098387796"
      crossorigin="anonymous"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
     <div class="sidebar">
@@ -37,7 +38,7 @@
     
 <article class="post">
     <div class="cover">
-        <img src="/assets/welcome.png" alt="Welcome Cover">
+        <img src="/assets/blog/welcome.png" alt="Welcome Cover">
     </div>
     <h1>Second Post</h1>
     <p class="author-meta">by <span>Vihaan Vinoth</span> · <span>Oct 25, 2024</span></p>
@@ -49,5 +50,17 @@
     </div>
 </article>
     </main>
+
+    <script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
 </body>
 </html>
