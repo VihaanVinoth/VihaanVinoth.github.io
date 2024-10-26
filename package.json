@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "gatsby-starter-blog",
   "private": true,
   "description": "A starter for a blog powered by Gatsby and Markdown",
@@ -45,5 +46,20 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+=======
+  "name": "vihaanvinoth.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+>>>>>>> 715edb7 (commit fix)
   }
 }
