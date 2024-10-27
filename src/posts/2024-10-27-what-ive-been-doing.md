@@ -10,6 +10,7 @@ imageAlt: Question Mark
 ---
 Hello, so I have finished working on my blog pages but is still WIP for the about and contacts, so when it's done, I can add some snazzy *Google AdSense* to my page and start doing the monetization kind of stuff. I currently am planning to add a minor addition to the posts so that it shows the reading time for it, just some statistics to show distinction to show how they are. 
 <br>
+<br>
 **Anything else?**
 <br>
 I am also going to add a newsletter so once you subscribe you can get sent my posts on a regular basis. 
