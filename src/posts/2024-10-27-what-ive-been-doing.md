@@ -13,6 +13,7 @@ Hello, so I have finished working on my blog pages but is still WIP for the abou
 <br>
 **Anything else?**
 <br>
+<br>
 I am also going to add a newsletter so once you subscribe you can get sent my posts on a regular basis. 
 <br>
 I hope this gives you notice on the confusion that is with the website.
