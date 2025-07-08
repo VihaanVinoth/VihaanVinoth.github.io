@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Share+Tech&display=swap');
+@import 'node_modules/modern-normalize/modern-normalize.css';
+
+* {
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    scroll-snap-stop: always;
+}
+
+
+body {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    overflow-x: hidden;
+}
+
+::selection {
+    background:gold;
+    color: black;
+}
+
+header {
+    border-left: 1px solid;
+    border-right: 1px solid;
+    margin: 0 10%;
+    scroll-snap-align: start;
+    scroll-margin-top: 5px;
+    z-index: 1;
+    position: relative;
+    height: 100%;
+}
+
+.logo > p {
+    font-family: 'Bitcount Grid Double', 'Courier New', Courier, monospace;
+}
+
+.logo > img {
+    width: 2.5em;
+    padding-left: 1.5%;
+    object-fit:contain;
+}
+
+.logo {
+    position: sticky;
+    width: 100%;
+    float: left;
+    display: flex;
+    justify-content: start;
+    gap: 10px;
+    padding-left: 1.5%;
+    border-bottom: 1px solid;
+    background-color: white;
+}
+
+.container, section {
+    clear: left;
+    padding: 14px 16px;
+    margin-left: 5.5%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+.container p {
+    margin-top: -5%;
+    padding: 10px;
+    width: 210px;
+    border: 1px dashed black;
+    transition: 100ms;
+}
+
+.container p:hover {
+    cursor: grab;
+    background-color: black;
+    border: 1px dashed white;
+    color: white;
+}
+
+.dog {
+    width: 75px;
+}
+
+.dog:hover {
+    animation: spinning-dog 2s infinite linear;
+    transition: 200ms;
+}
+
+@keyframes spinning-dog {
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-family: 'Share Tech', 'Courier New', Courier, monospace;
+    text-transform: lowercase;
+    text-align: left;
+    word-wrap: break-word;
+    font-size: 4em;
+    margin-bottom: 5%;
+}
+
+hr {
+    border: 0.75px solid;
+}
+
+section {
+    line-height: 2.5;
+    height: 100vh;
+    font-size: 14px;
+}
+
+code {
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+}
+
+.logos > img {
+    width: 100px;
+    border: 1px solid black;
+    padding: 14px 16px;
+    border-radius: 10px;
+    transform: rotateX(20deg);
+    box-shadow: 0 5px 0 0 grey;
+    background-color: white;
+    z-index: 100;
+}
+
+.logos {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.first {
+    animation: Scroll 30s linear infinite;
+}
+
+.second {
+    animation: Scroll 30s linear infinite;
+    animation-direction: reverse;
+}
+
+.logos > img:hover {
+    cursor: pointer;
+    transition: 100ms;
+    box-shadow: none;
+    transform: translateY(5px);
+    animation-play-state: paused;
+}
+
+@keyframes Scroll {
+    0% {transform: translateX(-200vw); -webkit-transform: translateX(-200vw);}
+    100% {transform: translateX(200vw); -webkit-transform: translateX(200vw);}
+}
+
+.resume {
+    color: black;
+    text-decoration: none;
+    font-family: 'Share Tech', 'Courier New', Courier, monospace;
+    border: 1px solid black;
+    border-radius: 50px;
+}
