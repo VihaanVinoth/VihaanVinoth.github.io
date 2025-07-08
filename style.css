@@ -160,7 +160,15 @@ code {
 .resume {
     color: black;
     text-decoration: none;
+    background: none;
     font-family: 'Share Tech', 'Courier New', Courier, monospace;
-    border: 1px solid black;
-    border-radius: 50px;
+    border: 1px dashed black;
+    padding: 14px 16px;
+}
+
+.resume:hover {
+    transition: 100ms;
+    border: 1px dashed white;
+    background-color: black;
+    color: white;
 }
